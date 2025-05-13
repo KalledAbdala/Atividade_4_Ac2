@@ -1,11 +1,12 @@
-# Atividade_4_Ac2
+# 📚 Atividade 4 - AC2
 
-Repositório criado para atividade de Ac2 - Atividade 4
+Este repositório contém os arquivos referentes à **Atividade 4 da AC2**, desenvolvida como parte da disciplina [nome da disciplina, se quiser incluir].
 
-# Integrantes :
+## 👥 Integrantes do grupo
 
-Amanda Prado    RA:235343
-Kalled Abdala   RA:234846
-Laura Bonilha   RA 236167
-Maria Neri 			RA 234910
-
+| Nome           | RA      |
+|----------------|---------|
+| Amanda Prado   | 235343  |
+| Kalled Abdala  | 234846  |
+| Laura Bonilha  | 236167  |
+| Maria Neri     | 234910  |
