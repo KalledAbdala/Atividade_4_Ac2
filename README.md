@@ -1,6 +1,6 @@
 # 📚 Atividade 4 - AC2
 
-Este repositório contém os arquivos referentes à **Atividade 4 da AC2**, desenvolvida como parte da disciplina [nome da disciplina, se quiser incluir].
+Este repositório contém os arquivos referentes à **Atividade 4 - AC2**, desenvolvida como parte da disciplina [Desenvolvimento Web Back-End].
 
 ## 👥 Integrantes do grupo
 
