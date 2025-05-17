@@ -1,0 +1,134 @@
+{
+  "thunderCollection": true,
+  "client": "Thunder Client",
+  "collectionName": "PetCare Testes",
+  "dateExported": "2025-05-16T23:24:24",
+  "requests": [
+    {
+      "_id": "1",
+      "name": "Cadastrar Tutor",
+      "method": "POST",
+      "url": "http://localhost:8080/tutores",
+      "body": {
+        "type": "json",
+        "raw": {
+          "nome": "João da Silva",
+          "cpf": "12345678900",
+          "telefone": "11999998888",
+          "endereco": "Rua das Acácias, 123"
+        }
+      }
+    },
+    {
+      "_id": "2",
+      "name": "Cadastrar Animal",
+      "method": "POST",
+      "url": "http://localhost:8080/animais",
+      "body": {
+        "type": "json",
+        "raw": {
+          "nome": "Rex",
+          "especie": "canino",
+          "raca": "Labrador",
+          "dataNascimento": "2020-05-10",
+          "tutor": {
+            "id": 1
+          }
+        }
+      }
+    },
+    {
+      "_id": "3",
+      "name": "Cadastrar Veterinário",
+      "method": "POST",
+      "url": "http://localhost:8080/veterinarios",
+      "body": {
+        "type": "json",
+        "raw": {
+          "nome": "Dra. Ana",
+          "dadosPessoais": "CRM 12345",
+          "especializacoes": [
+            "canino"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "4",
+      "name": "Agendar Consulta",
+      "method": "POST",
+      "url": "http://localhost:8080/consultas",
+      "body": {
+        "type": "json",
+        "raw": {
+          "dataConsulta": "2024-05-15",
+          "horaConsulta": "10:00",
+          "localConsulta": "Sala 01",
+          "animal": {
+            "id": 1
+          },
+          "veterinario": {
+            "id": 1
+          }
+        }
+      }
+    },
+    {
+      "_id": "5",
+      "name": "Registrar Prontuário",
+      "method": "POST",
+      "url": "http://localhost:8080/prontuarios",
+      "body": {
+        "type": "json",
+        "raw": {
+          "data": "2024-05-15",
+          "observacoes": "Animal com febre leve.",
+          "animal": {
+            "id": 1
+          }
+        }
+      }
+    },
+    {
+      "_id": "6",
+      "name": "Registrar Vacina",
+      "method": "POST",
+      "url": "http://localhost:8080/vacinas",
+      "body": {
+        "type": "json",
+        "raw": {
+          "nome": "V8",
+          "dataAplicacao": "2024-05-15",
+          "fabricante": "Bayer",
+          "prontuario": {
+            "id": 1
+          }
+        }
+      }
+    },
+    {
+      "_id": "7",
+      "name": "GET - Vacinas por Animal",
+      "method": "GET",
+      "url": "http://localhost:8080/vacinas/animal/1"
+    },
+    {
+      "_id": "8",
+      "name": "GET - Prontuários por Animal",
+      "method": "GET",
+      "url": "http://localhost:8080/prontuarios/animal/1"
+    },
+    {
+      "_id": "9",
+      "name": "GET - Animais por Tutor",
+      "method": "GET",
+      "url": "http://localhost:8080/animais/tutor/1"
+    },
+    {
+      "_id": "10",
+      "name": "GET - Veterinários por Especialização",
+      "method": "GET",
+      "url": "http://localhost:8080/veterinarios/especializacao/canino"
+    }
+  ]
+}
